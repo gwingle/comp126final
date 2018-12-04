@@ -1,0 +1,244 @@
+@import url("https://use.typekit.net/cjn2xyf.css");
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #1F1371;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16pt;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background: #1F1371;
+    color: #FFD1FF;
+    display: grid;
+    grid-template-columns: 66.66667% auto auto auto;
+    align-items: center;
+}
+
+h1 {
+    font-family: acier-bat-noir, sans-serif;
+    margin: 0 20px;
+    font-size: 3em;
+    font-weight: 400;
+}
+
+nav a {
+    font-family: reross-rectangular, sans-serif;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: inherit;
+}
+
+nav a:hover {
+    color: #FFB4FF
+}
+
+nav a:first-of-type {
+    text-align: left;
+}
+
+nav button {
+    display: none;
+    cursor: pointer;
+}
+
+#mobilenav {
+    display: none;
+}
+
+main {
+    height: calc(100vh - 70px);
+    display: grid;
+    grid-template-columns: 66.66667% 33.33333%;
+    background: #1F1371;
+}
+
+div {
+    display: block;
+    height: calc(100vh - 70px);
+    width: 100%;
+    background: #FFB4FF;
+}
+
+div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% 0px;
+    max-width: 1200px;
+}
+
+main div img {
+    box-sizing: border-box;
+}
+
+aside {
+    overflow-y: auto;
+}
+
+#imgselect {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    align-items: start;
+    background: #1F1371;
+}
+
+#imgselect input {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+#imgselect input {
+    opacity: 0.8;
+    transition: opacity 300ms;
+}
+
+#imgselect input:hover {
+    opacity: 1;
+}
+
+#info {
+    background: #FFD1FF;
+    color: #1F1371;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+#info p:last-of-type {
+    margin-bottom: 25px;
+}
+
+h2, h3, p {
+    font-family: bureau-grot, sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+p {
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 601px) {
+
+    nav a:nth-of-type(2) {
+        margin-left: 2.5vw;
+    }
+
+    nav a:last-of-type {
+        margin-right: 2.5vw;
+    }
+
+    main div img {
+        border-right: 3px solid #1F1371;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        grid-template-columns: 55% auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    html, body {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    nav {
+        grid-template-columns: 80% 20%;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav a:first-of-type {
+        display: block;
+    }
+
+    nav button {
+        display: block;
+        color: #FFD1FF;
+        background: none;
+        border: none;
+    }
+
+    button i {
+        font-size: 2rem;
+    }
+
+    #mobilenav {
+        visibility: hidden;
+        position: relative;
+        width: 100vw;
+        height: 0px;
+        background: #1F1371;
+        display: grid;
+        grid-template-rows: repeat(3, 50px);
+        align-items: center;
+    }
+
+    #mobilenav a {
+        display: block;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    aside {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+
+    #info {
+        padding-top: 25px;
+    }
+
+    main {
+        grid-template-columns: auto;
+        grid-template-rows: minmax(350px, 66.66667%) minmax(250px, 33.33333%);
+    }
+
+    main div {
+        height: auto;
+    }
+
+    main div img {
+        border-bottom: 3px solid #1F1371;
+    }
+
+    #imgselect {
+        grid-template-columns: repeat(10, auto);
+        grid-template-rows: 300px;
+    }
+
+    #imgselect input {
+        width: 200px;
+    }
+}
