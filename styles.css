@@ -196,7 +196,8 @@ p {
 
     #mobilenav {
         visibility: hidden;
-        position: relative;
+        position: absolute;
+        top: 70px;
         width: 100vw;
         height: 0px;
         background: #1F1371;
