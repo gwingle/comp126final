@@ -18,7 +18,7 @@ $('main').click(function(){
     });
     active = false;
 });
-$('content').click(function(){
+$('#img').click(function(){
     $('#mobilenav').animate({height: '0'}, function() {
         $('#mobilenav').css('visibility', 'hidden');
     });

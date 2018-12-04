@@ -65,14 +65,14 @@ main {
     background: #1F1371;
 }
 
-div {
+#img {
     display: block;
     height: calc(100vh - 70px);
     width: 100%;
     background: #FFB4FF;
 }
 
-div img {
+#img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -80,7 +80,7 @@ div img {
     max-width: 1200px;
 }
 
-main div img {
+main #img img {
     box-sizing: border-box;
 }
 
@@ -153,7 +153,7 @@ p {
         margin-right: 2.5vw;
     }
 
-    main div img {
+    main #img img {
         border-right: 3px solid #1F1371;
     }
 }
@@ -225,11 +225,11 @@ p {
         grid-template-rows: minmax(350px, 66.66667%) minmax(250px, 33.33333%);
     }
 
-    main div {
+    main #img {
         height: auto;
     }
 
-    main div img {
+    main #img img {
         border-bottom: 3px solid #1F1371;
     }
 
